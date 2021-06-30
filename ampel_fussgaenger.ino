@@ -1,11 +1,11 @@
-int rot =  12;  /* benutzt pin 12 für die rote LED - Autoampel.*/
-int gelb = 11;  /* benutzt pin 11 für die gelbe LED - Autoampel.*/
-int gruen = 10; /* benutzt pin 10 für die grüne LED - Autoampel.*/
-int f_rot = 9;  /* benutzt pin 9 für die rote LED - Fußgängerampel.*/
-int f_gr = 8;   /* benutzt pin 8 für die grüne LED - Fußgängerampel.*/
-int taste = 2;  /* benutzt pin 2 für den Taster - Fußgängerampel Knopf.*/
-int PauseKurz = 700;
-int PauseLang = 6000;
+int rot =  12;  // benutzt pin 12 für die rote LED - Autoampel.
+int gelb = 11;  // benutzt pin 11 für die gelbe LED - Autoampel.
+int gruen = 10; // benutzt pin 10 für die grüne LED - Autoampel.
+int f_rot = 9;  // benutzt pin 9 für die rote LED - Fußgängerampel.
+int f_gr = 8;   // benutzt pin 8 für die grüne LED - Fußgängerampel.
+int taste = 2;  // benutzt pin 2 für den Taster - Fußgängerampel Knopf.
+int PauseKurz = 700; //700 Millisekunden = 0,7 Sekunden
+int PauseLang = 6000; //6000 Millisekunden = 6 Sekunden
 
 void setup()  /* initialisiert die pins 8 bis 12 als Ausgang 
                   und pin 2 als Eingang für den Taster*/
