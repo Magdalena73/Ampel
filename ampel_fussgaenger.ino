@@ -4,8 +4,8 @@ int gruen = 10; // benutzt pin 10 für die grüne LED - Autoampel.
 int f_rot = 9;  // benutzt pin 9 für die rote LED - Fußgängerampel.
 int f_gr = 8;   // benutzt pin 8 für die grüne LED - Fußgängerampel.
 int taste = 2;  // benutzt pin 2 für den Taster - Fußgängerampel Knopf.
-int PauseKurz = 700; //700 Millisekunden = 0,7 Sekunden
-int PauseLang = 6000; //6000 Millisekunden = 6 Sekunden
+int PauseKurz = 600; //600 Millisekunden = 0,6 Sekunden
+int PauseLang = 5000; //6000 Millisekunden = 5 Sekunden
 
 void setup()  /* initialisiert die pins 8 bis 12 als Ausgang 
                   und pin 2 als Eingang für den Taster*/
@@ -38,11 +38,7 @@ void loop()  /*Fortlaufende Schleife*/
     digitalWrite(f_rot, HIGH);  /* Fußgängerampel schaltet die rote LED an.*/
     delay(PauseKurz);               /* wartet 0,6 Sekunden */
     digitalWrite(gelb, HIGH);
-    delay(PauseKurz);               /* wartet 0,6 Sekunden */
-    digitalWrite(rot, LOW);   /* Autoampel schaltet die rote LED aus.*/ 
-    digitalWrite(gelb, LOW);  /* Autoampel schaltet die gelbe LED aus.*/
-    digitalWrite(gruen, HIGH);  /* Autoampel schaltet die grüne LED an.*/
-    delay(2000);              /* wartet 2 Sekunden und fängt von vorne an */
+    delay(PauseKurz);             /* wartet 0,6 Sekunden und fängt von vorne an */
   }
 }
 
